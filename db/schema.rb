@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_10_24_181410) do
+ActiveRecord::Schema.define(version: 2022_10_25_145841) do
 
   create_table "most_valuable_players", force: :cascade do |t|
     t.string "name"
@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 2022_10_24_181410) do
   create_table "teams", force: :cascade do |t|
     t.string "name"
     t.string "city"
-    t.string "record"
+    t.string "win_loss_tie"
   end
 
 end

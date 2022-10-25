@@ -3,7 +3,7 @@ class CreateTeam < ActiveRecord::Migration[6.1]
     create_table :teams do |t|
       t.string :name
       t.string :city
-      t.string :record
+      t.string :win_loss_tie
     end
   end
 end
