@@ -26,7 +26,9 @@ ActiveRecord::Schema.define(version: 2022_10_26_162226) do
   create_table "teams", force: :cascade do |t|
     t.string "name"
     t.string "city"
-    t.string "win_loss_tie"
+    t.integer "win"
+    t.integer "loss"
+    t.integer "tie"
   end
 
 end
