@@ -10,7 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_10_25_145841) do
+ActiveRecord::Schema.define(version: 2022_10_26_162226) do
+
+  create_table "head_coaches", force: :cascade do |t|
+    t.string "name"
+    t.integer "team_id"
+  end
 
   create_table "most_valuable_players", force: :cascade do |t|
     t.string "name"

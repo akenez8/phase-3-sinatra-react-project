@@ -16,3 +16,4 @@ run ApplicationController
 
 use TeamsController
 use MVPController
+use HeadCoachController
