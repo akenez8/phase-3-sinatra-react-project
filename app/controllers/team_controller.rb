@@ -11,7 +11,9 @@ class TeamsController < ApplicationController
         team = Team.create(
             name: params[:name],
             city: params[:city],
-            win_loss_tie: params[:win_loss_tie]
+            win: params[:win],
+            loss: params[:loss],
+            tie: params[:tie],
         )
         team.to_json
     end
