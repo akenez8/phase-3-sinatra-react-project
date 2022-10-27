@@ -3,7 +3,7 @@ class TeamsController < ApplicationController
     get '/teams' do
         teams = Team.all
 
-        teams.to_json(include: [:head_coaches])
+        teams.to_json(include: :head_coaches)
     end
 
 

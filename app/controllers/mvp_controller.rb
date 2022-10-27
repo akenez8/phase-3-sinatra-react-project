@@ -1,7 +1,7 @@
 class MVPController < ApplicationController
 
     get '/mvps' do
-        mvps = MostValuablePlayer.all
+        mvps = MostValuablePlayer.all.order(:year).reverse
 
         mvps.to_json
     end
