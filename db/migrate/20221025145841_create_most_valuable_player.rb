@@ -3,7 +3,7 @@ class CreateMostValuablePlayer < ActiveRecord::Migration[6.1]
     create_table :most_valuable_players do |t|
       t.string :name
       t.string :position
-      t.integer :team_id
+      t.string :year
     end
   end
 end
